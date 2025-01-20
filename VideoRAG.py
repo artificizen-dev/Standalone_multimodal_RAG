@@ -121,7 +121,7 @@ def main():
         # Split the transcript into timestamped segments
         if "segments" not in st.session_state:
             st.session_state.segments = split_transcript(st.session_state.transcript)
-
+        print(st.session_state.segments)
         # Handle user queries
         query = st.text_input("Enter your query about the video:")
         if query:
